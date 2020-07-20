@@ -14,6 +14,15 @@ public class MainClass {
 			is = new FileInputStream("C:\\Users\\kihong.In\\Downloads\\jain.txt");
 			os = new FileOutputStream("C:\\Users\\kihong.In\\Downloads\\jain_copy.txt");
 			
+			/*
+			byte[] bs = new byte[5];
+			while (true) {
+				int count = is.read(bs);
+				if (count == -1) break;
+				os.write(bs, 0, count);
+			}
+			*/
+			
 			while (true) {
 				int i = is.read();
 				if (i == -1) break;
